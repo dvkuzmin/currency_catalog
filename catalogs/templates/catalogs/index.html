@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if not prices %}
+<form method="get" enctype="multipart/form-data">
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+{% endif %}
+<ul>
+{% for price in prices %}
+    <li>{{ price.currency.name }}({{ price.currency.char_code}}): {{ price.value }} рублей</li>
+{% endfor %}
+</ul>
+{% endblock content %}
