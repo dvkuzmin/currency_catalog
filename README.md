@@ -15,6 +15,12 @@
 git clone https://github.com/dvkuzmin/currency_catalog.git
 ```
 
+Создайте виртуальное окружение, затем выполните команду:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 В корне репозитория выполните команду:
 
